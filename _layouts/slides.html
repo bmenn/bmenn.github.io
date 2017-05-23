@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="/css/reveal.css">
+		<link rel="stylesheet" href="/css/theme/white.css">
+	</head>
+	<body>
+    <div class="reveal">
+<div class="slides">
+{{ content }}
+</div>
+		</div>
+		<script src="/lib/js/head.min.js"></script>
+		<script src="/js/reveal.js"></script>
+		<script>
+			Reveal.initialize({
+				dependencies: [
+					{ src: '/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: '/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: '/plugin/markdown/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '/plugin/notes/notes.js' }
+				]
+			});
+		</script>
+	</body>
+</html>

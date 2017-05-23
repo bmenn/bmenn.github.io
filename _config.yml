@@ -30,6 +30,8 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - vendor
+  - bundle
 collections:
   presentations:
     output: true

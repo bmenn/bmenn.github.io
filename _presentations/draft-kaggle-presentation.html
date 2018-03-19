@@ -1,35 +1,112 @@
 ---
 title: "Kaggle and Data Science Weight-lifting"
 categories: jekyll
-layout: slides
+layout: slidesv2
 is_draft: true
 ---
-<section data-markdown>
-## Kaggle and Data Science Weight-lifting
-</section>
-
-
-
-<section data-markdown>
-### What is Kaggle?
-</section>
-
-
-
-<section data-markdown>
-### What Kaggle is *NOT*
+<section data-markdown class="center">
+  # Kaggle Workouts
 </section>
 
 
 
 <section>
 
-<section data-markdown>
-  <p>... so <p class="fragment">why do Kaggle?</p></p>
+<section data-markdown data-separator-notes="^Notes:" class="center">
+  ## Intros
 </section>
 
-<section data-markdown>
-  <p>... it's weight-training for data scientists</p>
+<section data-markdown data-separator-notes="^Notes:" class="center">
+  ### What to expect
+  * Overview of what Kaggle is
+  * A biased opinion on it's usefulness
+  * A personal story of a Kaggle competition
+
+  Notes:
+  Lessons learned included in story
+</section>
+
+<section data-markdown data-separator-notes="^Notes:" class="center">
+  ### What's not happening
+  * Tips and tricks on being a Kaggle master
+  * Discussion on the best ML technique for X
+  * Data scientist in 7 days
+
+  Notes:
+  Still far from Kaggle master
+
+  Data science is not a fast learning curve
+</section>
+
+<section data-markdown data-separator-notes="^Notes:" class="center">
+  ### Who am I?
+  * Machine Learning Engineer at Embedded Intelligence
+  * Previously data analyst/software engineer/data scientist at Philips Wellcentive
+  * Healthcare data scientist at heart
+  * Project lead at Anidata
+
+  Notes:
+  Note the career transitions for those who are trying to make a transition
+</section>
+
+<section data-markdown data-separator-notes="^Notes:" class="center">
+  <script type="text/template">
+  ### Who are you?
+  * Data scientist <!-- .element: class="fragment fade-up" -->
+  * Looking to become a data scientist <!-- .element: class="fragment fade-up" -->
+  * Data analyst/business intelligence <!-- .element: class="fragment fade-up" -->
+  * Software engineer <!-- .element: class="fragment fade-up" -->
+  * Big data engineer <!-- .element: class="fragment fade-up" -->
+  * Data engineer <!-- .element: class="fragment fade-up" -->
+  * Management <!-- .element: class="fragment fade-up" -->
+  * Other (stem cell engineering?) <!-- .element: class="fragment fade-up" -->
+
+  Notes:
+  Get a feel of the audience background
+
+  Explain stem cell engineering
+  </script>
+</section>
+
+</section>
+
+
+
+<section data-markdown data-separator-notes="^Notes:" class="center">
+  ## What is Kaggle?
+</section>
+
+
+
+<section data-markdown data-separator-notes="^Notes:" class="center">
+  ## What Kaggle is *NOT*
+</section>
+
+
+
+<section>
+
+<section data-markdown class="center">
+  ... so <p class="fragment">why do Kaggle?</p>
+</section>
+
+<section data-background-image="/images/buff-weightlifting.jpg">
+  <span class="light-text">... it's weight-training for data
+    scientists</span>
+
+  <div class="slide-footer fragment">
+    Photo by Binyamin Mellish from Pexels
+    https://www.pexels.com/photo/fitness-power-man-person-17840/
+  </div>
+</section>
+
+<section data-background-image="/images/give-up-weightlifting.jpg">
+  <span class="light-text">... but probably start looking like this</span>
+
+  <div class="slide-footer fragment">
+    Photo by Victor Freitas from Pexels
+    https://www.pexels.com/photo/man-lying-on-rubber-mat-near-barbell-inside-the-gym-703009/
+  </div>
 </section>
 
 </section>
@@ -38,17 +115,65 @@ is_draft: true
 
 <section>
 
-<section data-markdown>
-  My personal experience with Kaggle's Tensorflow Speech recognition
-  challenge
+<section data-markdown class="center">
+  ## Personal Case Study
+  ### Tensorflow Speech recognition challenge
 </section>
 
-<section data-markdown>
-  Goal's coming into the competition
+<section>
+  <blockquote cite="https://www.kaggle.com/c/tensorflow-speech-recognition-challenge"
+      style="font-size:x-large">
+    <p>We might be on the verge of too many screens. It seems like everyday,
+    new versions of common objects are “re-invented” with built-in wifi and
+    bright touchscreens. A promising antidote to our screen addiction are
+    voice interfaces.</p>
+
+    <p>But, for independent makers and entrepreneurs, it’s hard to build a
+    simple speech detector using free, open data and code. Many voice
+    recognition datasets require preprocessing before a neural network model
+    can be built on them. To help with this, TensorFlow recently released
+    the Speech Commands Datasets. It includes 65,000 one-second long
+    utterances of 30 short words, by thousands of different people.</p>
+
+    <p>In this competition, you're challenged to use the Speech Commands
+    Dataset to build an algorithm that understands simple spoken commands.
+    By improving the recognition accuracy of open-sourced voice interface
+    tools, we can improve product effectiveness and their accessibility.</p>
+  </blockquote>
 </section>
 
-<section data-markdown>
-  Lessons learned
+<section data-markdown data-separator-notes="^Notes:" class="center">
+  <script type="text/template">
+  ### Goal's coming into the competition
+  * Test speed of setting up a training pipeline <!-- .element: class="fragment fade-up" -->
+  * Learn how to track model tuning experiments <!-- .element: class="fragment fade-up" -->
+  * Learn how to do speech recognition <!-- .element: class="fragment fade-up" -->
+  * Distill neural networks <!-- .element: class="fragment fade-up" -->
+  * Transfer distilled net to a Raspberry Pi <!-- .element: class="fragment fade-up" -->
+
+  Notes:
+  Tried doing this in 2 weeks, bad idea. Lost sleep, etc.
+
+  Explain which ones worked out and which ones didn't.
+  </script>
+</section>
+
+<section data-markdown data-separator-notes="^Notes:" class="center">
+  <script type="text/template">
+  ### Lessons learned
+  * Pay attention to competition announcements
+  * <!-- .element: class="fragment fade-up" --> Training pipelines are great
+  *when they work* <!-- .element class="fragment" -->
+  * <!-- .element: class="fragment fade-up" --> Test your code
+  **often** <!-- .element class="fragment" -->
+  * <!-- .element: class="fragment fade-up" --> Practice bring focus to learning material
+
+  Notes:
+  CI/CD great for testing code, Unit tests good place to start (after
+  learning how to writ code).
+
+  Found several good papers try to troubleshoot.
+  </script>
 </section>
 
 </section>
@@ -57,16 +182,59 @@ is_draft: true
 
 <section>
 
-<section data-markdown>
-  Some good starter Kaggle events/competitions
+<section data-markdown class="center">
+  <script type="text/template">
+  ## What if I just want a test-drive?
+  ### The story of my first (several) competitions <!-- .element: class="fragment" -->
+  </script>
 </section>
 
-<section data-markdown>
-  MNIST
+<section data-background-image="/images/cockpit.jpg">
+  <span class="light-text">... button-pressing, lever-pulling ...</span>
+
+  <div class="slide-footer fragment">
+    https://pixabay.com/en/plane-clock-indicators-controls-85519/
+  </div>
 </section>
 
-<section data-markdown>
-  Titanic
+<section data-markdown data-separator-notes="^Notes:" class="center">
+  <script type="text/template">
+  ## And that's perfectly ok
+  ### Remember, practice helps learning (lesson #4) <!-- .element: class="fragment" -->
+  ### But there's more to data science than Kaggle <!-- .element: class="fragment" -->
+
+  Notes:
+  Break/pause here.
+
+  Mention code hack session for Kaggle.
+  </script>
 </section>
 
+</section>
+
+
+
+<!-- TODO Shrink Links font size -->
+<section data-markdown style="text-align:left">
+  <script type="text/template">
+  # Q&A
+  ## Links
+  - GitHub: `github.com/bmenn`
+  - Speech recognition repo: `github.com/bmenn/kaggle-tensorflow-speech-recognition-challenge`
+  - LinkedIn: `linkedin.com/in/bryant-menn`
+  - Anidata Slack: `bryant.menn`
+
+  Notes:
+  </script>
+</section>
+
+
+<section data-markdown class="center">
+  ## Good starter Kaggle events/competitions
+  * MNIST
+  * Titanic
+  * Iris
+
+  Notes:
+  Kaggle kernels are useful here
 </section>
